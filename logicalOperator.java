@@ -6,32 +6,25 @@ public class logicalOperator{
 		
 		int num1 = 10;
 		int num2 = 20;
-		
+		int num3 = 20;
+		int num4 = 10;
 		boolean a=false;
 		
 		//for AND operator
-		if (num1 < num2 && num1 > num2) {
-			System.out.println("this is for AND condition :"+true);
-		}
-		else {
-			System.out.println("this is for AND condition :"+false);
-		}
+		boolean result = num1 < num2 && num3 > num4;
+		System.out.println("this is for (&&) AND :"+result);
 		
 		//for OR operator
 		
-		if (num1 > num2 || num1 < num2) {
-			System.out.println("this is for OR condition :"+true);
-		}
-		else {
-			System.out.println("this is for OR condition :"+false);
-		}
+		boolean OR = num1 > num2 || num3 < num4;
+		System.out.println("this is for (||) OR :"+OR);
 		
 		
 		//for NOT operator
 		
-		boolean result=!a;
+		boolean NOT=!a;
 		
-		System.out.println("this is for NOT :"+result);
+		System.out.println("this is for (!) NOT :"+NOT);
 		
 		
 		
