@@ -27,5 +27,17 @@ public class multidimentionalArray{
 			System.out.println(" ");
 		}
 		
+		System.out.println("\nuse enhance for loop \n");
+		
+		for(int n[] : nums)
+		{
+			for(int m : n)
+			{
+				System.out.print(m + "");
+				System.out.print(" ");
+			}
+			System.out.println();
+		}
+		
 	}
 }
