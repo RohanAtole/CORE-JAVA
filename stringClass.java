@@ -21,5 +21,19 @@ public class stringClass{
 		
 		//concatenate
 		System.out.println(name.concat(" atole"));
+		
+		//printing sub name
+		String sname = new String("Ronny");
+		System.out.println("name is "+sname);
+		
+		String s1 = "Rohan";
+		String s2 = "Rohan";
+		  
+		System.out.println(s1 == s1);
+		
+		//we can able to change address instead of data
+		//because we can't change the data
+		name = sname + s1;
+		System.out.println(name);
 	}
 }
