@@ -10,18 +10,16 @@ class Human{
 	public int getAge() {
 		return age;
 	}
-	
-	public void setAge(int a) {
-		age = a;
+	public void setAge(int age) {
+		this.age = age;
 	}
-	
 	public String getName() {
 		return name;
 	}
-	
-	public void setName(String a) {
-		name = a;
+	public void setName(String name) {
+		this.name = name;
 	}
+	 
 }
 
 public class encapsulation{
