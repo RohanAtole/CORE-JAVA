@@ -1,11 +1,11 @@
 package OOPS;
 
-class Human1{
+class Humann{
 	
 	private int age;
 	private String name;
 	
-	public Human1() {
+	public Humann() {
 		
 		age = 12;
 		name = "John";
@@ -23,7 +23,7 @@ class Human1{
 
 public class constructor{
 	public static void main(String args[]) {
-		Human1 h1 = new Human1();
-		System.out.println(h1.getName() +":"+h1.getAge());
+		Humann obj = new Humann();
+		System.out.println(obj.getName() +":"+obj.getAge());
 	}
 }
