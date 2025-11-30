@@ -1,6 +1,6 @@
 package OOPS;
 
-class A{
+class A extends Object{
 	public A() {
 		super();
 		System.out.println("in A");
@@ -18,7 +18,7 @@ class B extends A{
 		System.out.println("in B");
 	}
 	public B(int n) {
-		super();
+		super(n);
 		System.out.println("in B int");
 	}
 }
@@ -26,6 +26,8 @@ class B extends A{
 public class methodOverloading{
 	
 	public static void main(String args[]) {
+		
+		B b = new B();
 		
 	}
 }
