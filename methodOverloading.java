@@ -6,7 +6,7 @@ class A extends Object{
 		System.out.println("in A");
 	}
 	public A(int n) {
-		super();
+		super();			//super() method execute the constructor of super class.
 		System.out.println("in A int");
 	}
 }
@@ -14,11 +14,11 @@ class A extends Object{
 class B extends A{
 	
 	public B() {
-		super(5);
+		super();
 		System.out.println("in B");
 	}
 	public B(int n) {
-		super(n);
+		this();      //this() method execute a constructor of same class.
 		System.out.println("in B int");
 	}
 }
@@ -27,7 +27,7 @@ public class methodOverloading{
 	
 	public static void main(String args[]) {
 		
-		B b = new B();
+		B b = new B(5);
 		
 	}
 }
