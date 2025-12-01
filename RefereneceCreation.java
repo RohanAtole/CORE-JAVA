@@ -17,5 +17,9 @@ public class RefereneceCreation{
 		X obj;			//Reference Creation
 		obj = new X();	//creating object and value assigned to obj.
 		obj.show();
-	}
+		
+		new X();  //this is object creation not above entire line.
+				//this type of object known as anonymous object.
+		new X().show();
+	}			
 }
