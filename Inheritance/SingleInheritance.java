@@ -12,7 +12,7 @@ class Dog extends Animal{  //Animal inherits Dog class
 }
 public class SingleInheritance{
 	public static void main(String args[]) {
-		Dog obj = new Dog();  //here we only create the object of parent class.
+		Dog obj = new Dog();  //here we only create the object of child class.
 		obj.eat();
 		obj.bark();
 	}
