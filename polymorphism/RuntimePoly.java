@@ -28,7 +28,7 @@ public class RuntimePoly{
 		obj = new B(); //referring object as B.
 		obj.show();
 		
-		obj = new C();//referring object as C.
+		obj = new C(); //referring object as C.
 		obj.show();
 	}
 }
