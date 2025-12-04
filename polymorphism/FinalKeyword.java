@@ -3,7 +3,9 @@ package oops.polymorphism;
 //final - Variable, method, class.
 
 final class Reserve{ //If your class is final then you should do not inherit another class.
-	
+	final public void show() {  //also if the method is final then we can't override.
+		System.out.println("In finalize class");
+	}
 }
 
 class Calc{        
