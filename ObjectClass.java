@@ -3,6 +3,10 @@ package variablesdatatypes;
 class Laptop{
 	String brand;
 	int price;
+	
+	public String toString() {
+		return "Hey";
+	}
 }
 
 public class ObjectClass{
