@@ -5,7 +5,13 @@ class Laptop{
 	int price;
 	
 	public String toString() {
-		return "Hey";
+		return brand + ":" + price;
+	}
+	
+	public boolean equals(Laptop that) {
+		
+		return this.brand.equals(that.brand) && this.price == that.price;
+		//In one line compare two objects data is equal or not using the equals built in function.
 	}
 }
 
