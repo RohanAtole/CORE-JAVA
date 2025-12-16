@@ -1,34 +1,70 @@
 package variablesdatatypes;
 
-class Laptop{
-	String brand;
-	int price;
-	
-	public String toString() {
-		return brand + ":" + price;
-	}
-	
-	public boolean equals(Laptop that) {
-		
-		return this.brand.equals(that.brand) && this.price == that.price;
-		//In one line compare two objects data is equal or not using the equals built in function.
-	}
+// Laptop class implicitly extends Object class
+class Laptop {
+
+    // instance variables (object state)
+    String brand;
+    int price;
+
+    // toString() method → converts object into readable String
+    // called automatically when object is printed
+    @Override
+    public String toString() {
+        return brand + " : " + price;
+    }
+
+    // equals() method → compares object data (not memory address)
+    @Override
+    public boolean equals(Object obj) {
+
+        // check if both references point to same object
+        if (this == obj)
+            return true;
+
+        // check if passed object is null
+        if (obj == null)
+            return false;
+
+        // check if both objects are of same class
+        if (getClass() != obj.getClass())
+            return false;
+
+        // type casting Object to Laptop
+        Laptop other = (Laptop) obj;
+
+        // compare actual data members
+        return price == other.price &&
+               brand.equals(other.brand);
+    }
+
+    // hashCode() → generates integer value for object
+    // must be consistent with equals()
+    @Override
+    public int hashCode() {
+        return brand.hashCode() + price;
+    }
 }
 
-public class ObjectClass{
-	public static void main(String args[]) {
-		Laptop obj1 = new Laptop();
-		obj1.brand = "Lenona Yoga";
-		obj1.price = 1000;
-		
-		Laptop obj2 = new Laptop();
-		obj2.brand = "Lenona Yoga";
-		obj2.price = 1000;
-		
-		boolean result = obj1.equals(obj2);
-		
-		System.out.println(result);
-		
-		System.out.println(obj1.toString());
-	}
+public class ObjectClass {
+
+    public static void main(String[] args) {
+
+        // creating first Laptop object
+        Laptop obj1 = new Laptop();
+        obj1.brand = "Lenovo Yoga";
+        obj1.price = 1000;
+
+        // creating second Laptop object
+        Laptop obj2 = new Laptop();
+        obj2.brand = "Lenovo Yoga";
+        obj2.price = 1000;
+
+        // equals() checks data, not reference
+        System.out.println(obj1.equals(obj2)); // true
+
+        // toString() is called automatically
+        System.out.println(obj1); // Lenovo Yoga : 1000
+        System.out.println(obj2); // Lenovo Yoga : 1000
+    }
 }
