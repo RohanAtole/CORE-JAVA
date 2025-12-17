@@ -17,10 +17,10 @@ class X{  //Outer class
 public class innerClass{
 	
 	public static void main(String args[]) {
-		X obj = new X();
+		X obj = new X();  //simply call the regular class in regular manner.
 		obj.show();
 		
-		X.Y obj1 = obj.new Y();
+		X.Y obj1 = obj.new Y(); //but in inner class call is different as compare to outer class.
 		obj1.config();
 	}
 }
