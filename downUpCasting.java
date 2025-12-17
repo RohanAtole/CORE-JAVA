@@ -22,7 +22,9 @@ public class downUpCasting{
 		obj.show1();
 		
 		//Down Casting
+		if (obj instanceof Q) {  // this is optional but its called safe downCasting
 		Q obj1 = (Q) obj;
 		obj1.show2();
+		}
 	}
 }
