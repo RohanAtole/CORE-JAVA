@@ -12,7 +12,7 @@ public class AnonymousInnerClass{
 	public static void main(String a[]) {
 		D obj = new D()
 				{
-			public void show() {
+			public void show() {  //It has a class no name called Anonymous class.
 				System.out.println("In new show method");
 			}
 			
