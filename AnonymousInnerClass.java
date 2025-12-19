@@ -10,8 +10,9 @@ class D{
 
 public class AnonymousInnerClass{
 	public static void main(String a[]) {
-		D obj = new D()
-				{
+		D obj = new D() //this is class.
+				{ 
+			//this is the method in class.
 			public void show() {  //It has a class no name called Anonymous class.
 				System.out.println("In new show method");
 			}
