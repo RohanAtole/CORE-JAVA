@@ -1,12 +1,17 @@
 package variablesdatatypes;
 
 enum Lapttop{
-	Macbook(2000), XPS(2200), Surface(1500), ThinkPad(1800);
+	Macbook(2000), XPS(2200), Surface, ThinkPad(1800);
 	
 	private int price;
 
+	private Lapttop() {
+		price = 500;
+	}
+
 	private Lapttop(int price) {
 		this.price = price;
+		System.out.println("In Laptop " + this.name());
 	}
 
 	public int getPrice() {
