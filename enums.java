@@ -9,7 +9,7 @@ public class enums{
 		
 		Status s = Status.success;
 		
-		//Using Switch Statement
+		//Using Switch Statement 
 		
 		switch(s) {
 		case Running:
