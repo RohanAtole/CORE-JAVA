@@ -6,7 +6,8 @@ class Z{
 	}
 }
 class V extends Z{
-	public void showTheDataWhichBelongToThisClass() {
+	@Override
+	public void showTheDataWhichBelongsToThisClass() {
 		System.out.println("In Class V method");
 	}
 }
