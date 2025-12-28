@@ -2,7 +2,7 @@ package variablesdatatypes;
 
 @FunctionalInterface
 interface G{
-	void show(); 
+	void show(int i, int j); 
 }
 
 /*
@@ -12,10 +12,10 @@ interface G{
  */
 public class functionalInterface{
 	public static void main(String args[]) {
-		G obj = ()->    //Lambda Expression show using (->) that symbol.
+		G obj = (int i, int j)->    //Lambda Expression show using (->) that symbol.
 		{
-			System.out.println("In show");
+			System.out.println("In show "+i+","+j);
 		};
-		obj.show();
+		obj.show(4,5);
 	}
 }
