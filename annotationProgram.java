@@ -6,10 +6,13 @@ class Z{
 	}
 }
 class V extends Z{
+
 	@Override
 	public void showTheDataWhichBelongsToThisClass() {
-		System.out.println("In Class V method");
+		// TODO Auto-generated method stub
+		super.showTheDataWhichBelongsToThisClass();
 	}
+	
 }
 
 public class annotationProgram{
