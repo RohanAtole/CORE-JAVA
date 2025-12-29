@@ -5,15 +5,20 @@ public class simpleExceptionHanding{
 		int i = 0;
 		int j = 18;
 		int res;
+		int nums[] = new int[5];
 		
 		try
 		{
 			res = j/i;
-			System.out.println(res);
+			System.out.println(nums[1]);
+			System.out.println(nums[5]);
 		}
-		catch(Exception e) {
-			System.out.println("something went wrong....");
+		catch(ArithmeticException e) {
+			System.out.println("can not divide by zero");
 		}
-		System.out.println("Program Executed successfully.....");
+		catch(ArrayIndexOutOfBoundsException e) {
+		System.out.println("stay in your limit");
+		}
+		System.out.println("Program Executed Successfully.....");
 	}
 }
