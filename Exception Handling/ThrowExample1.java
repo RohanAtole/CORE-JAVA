@@ -1,4 +1,4 @@
-public class ThrowExample {
+public class ThrowExample1 {
 
     static void checkAge(int age) {
         if (age < 18) {
