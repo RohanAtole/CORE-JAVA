@@ -1,6 +1,6 @@
 package variablesdatatypes;
 
-public class throwExample{
+public class ThrowExample2{
 	public static void main(String args[]) {
 		int i = 20;
 		int j = 0;
