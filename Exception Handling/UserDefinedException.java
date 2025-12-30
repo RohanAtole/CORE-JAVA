@@ -1,8 +1,8 @@
 package variablesdatatypes;
 
-class RohanException extends Exception{
-	public RohanException(String string) {
-		
+class RohanException extends Exception{     //Here instead of Exception we use RuntimeException
+	public RohanException(String string) {  //use defined Exception
+		super(string);
 	}
 }
 
