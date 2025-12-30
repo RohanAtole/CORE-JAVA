@@ -1,4 +1,4 @@
-public class ThrowsExample {
+public class ThrowsExample1 {
 
     static void calculate() throws InterruptedException {
         Thread.sleep(1000);  // may throw checked exception
