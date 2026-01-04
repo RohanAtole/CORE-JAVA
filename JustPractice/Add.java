@@ -1,9 +1,15 @@
-class Add
+import java.io.*;
+import java.util.Scanner;
+public class Add
 {
   public static void main(String args[])
   {
-    int a=10,b=20;
-    int add=a+b;
-    System.out.println("addition is:"+add);
+    int a,b,c;
+    Scanner sc=new Scanner(System.in);
+    System.out.println("enter the two numbers:");
+    a=sc.nextInt();
+    b=sc.nextInt();
+    c=a+b;
+    System.out.println("Addition of number is:"+c);
   }
 }
