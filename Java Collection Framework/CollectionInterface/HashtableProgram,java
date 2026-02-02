@@ -1,0 +1,21 @@
+package JCF;
+
+import java.util.Hashtable;
+
+public class HashtableProgram {
+	public static void main(String args[]) {
+
+		//Hashtable
+		
+		System.out.println("Hashtable : ");
+		
+		Map<String, Integer> Student = new Hashtable<>();
+		Student.put("Navin", 56);
+		Student.put("Harsh", 23);
+		Student.put("Sushil", 67);
+		Student.put("Kiran", 92);
+		Student.put("Harsh", 45);
+		
+		System.out.println(Student);
+	}
+}
